@@ -61,6 +61,10 @@ Envguard is a static site, so it works on Vercel or Netlify with zero config:
 - Build command: `npm run build`
 - Output directory: `dist`
 
+### GitHub Pages
+
+Pushes to `main` are built and published to GitHub Pages by the workflow in `.github/workflows/deploy.yml`. Set **Settings → Pages → Build and deployment → Source** to **GitHub Actions** once, and the site is served from the `dist` output.
+
 ## Privacy
 
 Your env files are parsed in memory and never sent anywhere. There is no backend, no database, no analytics, and no `localStorage` — nothing you paste is saved, and reloading the page clears it.
